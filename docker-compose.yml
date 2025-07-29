@@ -22,7 +22,7 @@ services:
     image: sumitrmalik/movie-streaming-frontend:latest
     container_name: web
     environment:
-      API_URL: http://node-app:3000
+      API_URL: node-app
     ports:
       - "80:80"
 
