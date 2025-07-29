@@ -5,7 +5,7 @@ services:
     image: sumitrmalik/movie-streaming-backend-nodejs:latest
     container_name: node-app
     environment:
-      DB_HOST: 152.66.204.211
+      DB_HOST: mysql-db
       DB_USER: admin
       DB_PASSWORD: redhat
       DB_NAME: movie_db
@@ -22,7 +22,7 @@ services:
     image: sumitrmalik/movie-streaming-frontend:latest
     container_name: web
     environment:
-      API_URL: 52.66.204.211
+      API_URL: mysql-db
     ports:
       - "80:80"
 
