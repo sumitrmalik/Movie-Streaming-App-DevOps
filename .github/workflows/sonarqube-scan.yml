@@ -3,11 +3,11 @@ name: Build
 on:
   #push:
   #  branches:
-  #    - dev1
+  #    - feature-gfg
   pull_request:
-    branches: ["dev"]
-     paths-ignore:
-       - 'README.md'
+    branches: ["feature-gfg"]
+    paths-ignore:
+      - 'README.md'
 
 
 jobs:
@@ -57,7 +57,7 @@ jobs:
           push: true
           context: .
           file: ./Dockerfile
-          tags: jinny1/movie-streaming-backend-nodejs:latest
+          tags: sumitrmalik/movie-streaming-backend-nodejs:latest
 
       -
         name: Build and push frontend dockerfile
@@ -66,6 +66,6 @@ jobs:
           push: true
           context: ./html
           file: ./html/Dockerfile
-          tags: jinny1/movie-streaming-frontend:latest
+          tags: sumitrmalik/movie-streaming-frontend:latest
  
           
