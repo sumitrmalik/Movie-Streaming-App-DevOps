@@ -9,8 +9,8 @@ services:
       DB_USER: admin
       DB_PASSWORD: redhat
       DB_NAME: movie_db
-      AWS_ACCESS_KEY_ID: ${secrets.AWS_ACCESS_KEY_ID}
-      AWS_SECRET_ACCESS_KEY: ${secrets.AWS_SECRET_ACCESS_KEY}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
       AWS_REGION: ap-south-1
     ports:
       - "3000:3000"
