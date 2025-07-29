@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - dev1
+      - feature-gfg
   pull_request:
     branches: ["feature-gfg"]
      paths-ignore:
