@@ -6,8 +6,8 @@ on:
       - feature-gfg
   pull_request:
     branches: ["feature-gfg"]
-     paths-ignore:
-       - 'README.md'
+    paths-ignore:
+      - 'README.md'
 
 
 jobs:
