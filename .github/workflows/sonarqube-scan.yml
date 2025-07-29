@@ -1,9 +1,9 @@
 name: Build
 
 on:
-  push:
-    branches:
-      - feature-gfg
+  #push:
+  #  branches:
+  #    - feature-gfg
   pull_request:
     branches: ["feature-gfg"]
     paths-ignore:
