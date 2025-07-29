@@ -48,7 +48,7 @@ The project follows a multi-container Docker architecture consisting of three ma
 ### Running the Application
 
 1. **Fork & Clone the repository**:
-    - Fork the repository https://github.com/sudhanshuvlog/Movie-Streaming-App-DevOps.git
+    - Fork the repository https://github.com/sumitrmalik/Movie-Streaming-App-DevOps.git
     - Once you have forked the repo on your github account, Clone the repo in your system
         ```bash
         git clone <your repo URL>
@@ -103,7 +103,7 @@ The project follows a multi-container Docker architecture consisting of three ma
 
 6. **Continuous Integration & Deployment**
 
-    CI/CD Pipeline: The CI/CD pipeline Checks code quality using SonarQube and then it builds Docker images with tags `jinny1/movie-streaming-backend-nodejs:latest` and `jinny1/movie-streaming-frontend:latest` and pushes them to DockerHub. Now it will deploy the application using these docker images
+    CI/CD Pipeline: The CI/CD pipeline Checks code quality using SonarQube and then it builds Docker images with tags `sumitrmalik/movie-streaming-backend-nodejs:latest` and `sumitrmalik/movie-streaming-frontend:latest` and pushes them to DockerHub. Now it will deploy the application using these docker images
 
     - Jenkins (for Continuous Integration)
         The project includes a CI-CD pipeline defined in `Jenkinsfile`, which performs the following steps:
@@ -118,8 +118,8 @@ The project follows a multi-container Docker architecture consisting of three ma
 
 7. **Latest Docker Image**
 - My Latest docker image for this project are present here, You can use this image as well, If you don't wanted to build your own image
-    - https://hub.docker.com/r/jinny1/movie-streaming-frontend
-    - https://hub.docker.com/r/jinny1/movie-streaming-backend-nodejs
+    - https://hub.docker.com/r/sumitrmalik/movie-streaming-frontend
+    - https://hub.docker.com/r/sumitrmalik/movie-streaming-backend-nodejs
 
 
 9. **Contact**

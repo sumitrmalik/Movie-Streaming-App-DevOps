@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'dev', url: 'https://github.com/sudhanshuvlog/Movie-Streaming-App-DevOps.git'
+        git branch: 'dev', url: 'https://github.com/sumitrmalik/Movie-Streaming-App-DevOps.git'
       }
     }
     stage('Unit Tests') {
@@ -28,10 +28,10 @@ pipeline {
         ]) {
             sh '''
             echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
-            docker build -t jinny1/movie-streaming-backend-nodejs:latest .
-            docker push jinny1/movie-streaming-backend-nodejs:latest
-            docker build -t jinny1/movie-streaming-frontend:latest ./html
-            docker push jinny1/movie-streaming-frontend:latest
+            docker build -t sumitrmalik/movie-streaming-backend-nodejs:latest .
+            docker push sumitrmalik/movie-streaming-backend-nodejs:latest
+            docker build -t sumitrmalik/movie-streaming-frontend:latest ./html
+            docker push sumitrmalik/movie-streaming-frontend:latest
             docker logout
             '''
         }
