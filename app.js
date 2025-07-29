@@ -74,7 +74,7 @@ const uploadToS3 = async (fileBuffer, fileName, contentType) => {
 
   const command = new PutObjectCommand(uploadParams);
   await s3.send(command);
-  return `https://${uploadParams.Bucket}.s3.ap-south-1.amazonaws.com/${fileName}`;
+  return `https://${uploadParams.Bucket}.s3.amazonaws.com/${fileName}`;
 };
 
 // Register a new movie
